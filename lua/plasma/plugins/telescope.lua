@@ -24,8 +24,10 @@ return {
                         ["<Down>"] = "cycle_history_next",
                         ["<Up>"] = "cycle_history_prev",
                         -- 预览窗口上下滚动
-                        ["<A-u>"] = "preview_scrolling_up",
-                        ["<A-d>"] = "preview_scrolling_down",
+                        ["<C-k>"] = "preview_scrolling_up",
+                        ["<C-j>"] = "preview_scrolling_down",
+                        ["<C-h>"] = "preview_scrolling_left",
+                        ["<C-l>"] = "preview_scrolling_right"
                     }
                 }
             },
