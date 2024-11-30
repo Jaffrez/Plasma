@@ -1,6 +1,3 @@
--- clean existing keymaps
-require("plasma.utils.clean").clean_keymaps()
-
 vim.g.mapleader = " "
 
 local keymaps = {

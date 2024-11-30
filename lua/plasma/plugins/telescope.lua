@@ -6,10 +6,14 @@ return {
         { "<leader>fb", ":Telescope buffers<CR>", desc = "Find Buffers" },
         { "<leader>fh", ":Telescope help_tags<CR>", desc = "Find Helps" },
         { "<leader>fg", ":Telescope live_grep<CR>", desc = "Find String" },
+        { "<leader>fk", ":Telescope keymaps<CR>", desc = "Find Keymaps"},
+        { "<leader>fp", ":Telescope projects<CR>", desc = "Find Projects"},
     },
     dependencies = {
         "nvim-lua/plenary.nvim",
         { "nvim-telescope/telescope-fzf-native.nvim", build = "cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release" },
+        "nvim-telescope/telescope-project.nvim",
+        "ahmedkhalf/project.nvim",
     },
     config = function()
         require("telescope").setup({
@@ -41,5 +45,6 @@ return {
             }
         })
         require("telescope").load_extension("fzf")
+        require("telescope").load_extension("project")
     end
 }
