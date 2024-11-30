@@ -26,43 +26,43 @@ return {
                 center = {
                     {
                         icon = " ",
-                        key = "p",
+                        key = "pp",
                         desc = "Find Projects              ",
                         action = "Telescope projects",
                     },
                     {
                         icon = " ",
-                        key = "f",
+                        key = "ff",
                         desc = "Find Files                 ",
                         action = "Telescope find_files",
                     },
                     {
                         icon = " ",
-                        key = "g",
+                        key = "tt",
                         desc = "Find Text                  ",
                         action = "Telescope live_grep",
                     },
                     {
                         icon = " ",
-                        key = "r",
+                        key = "rr",
                         desc = "Recently Files             ",
                         action = "Telescope oldfiles",
                     },
                     {
                         icon = "󰧹 ",
-                        key = "m",
+                        key = "mm",
                         desc = "Find Keymaps               ",
                         action = "Telescope keymaps",
                     },
                     { 
                         icon = " ",
-                        key = "c",
+                        key = "cc",
                         desc = "Change Theme               ", 
                         action = "Telescope colorscheme"
                     },
                     {
                         icon = "󰋗 ",
-                        key = "p",
+                        key = "pp",
                         desc = "Help                       ",
                         action = "Telescope help_tags",
                     },
@@ -74,7 +74,7 @@ return {
                     "",
                     "",
                     "",
-                    "luzyi  Rust"
+                    "luzyi   Rust"
                 },
             }
         })

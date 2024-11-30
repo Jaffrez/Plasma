@@ -9,6 +9,13 @@ return {
     opts = {
         options = {
             always_show_bufferline = false,
+            offsets = {
+                {
+                    filetype = "neo-tree",
+                    text = "Neo-tree",
+                    highlight = "Directory",
+                },
+            },
         }
     },
     config = function(_, opts)
