@@ -1,5 +1,8 @@
 ![Screen shot](./screenshot.png)
 
+> [!WARNING]
+> Still under development
+
 # Quick Start
 ## Pre-requisites
 - [Neovim](https://neovim.io/)
@@ -10,8 +13,8 @@
 - [fd](https://github.com/sharkdp/fd)
 
 ## Install
-> [!WARNING]
-> Remember to back up your existing configuration
+> [!IMPORTANT]
+> Remember to backup your existing configuration
 
 ` $ git clone https://github.com/Jaffrez/Plasma.git ~/.config/nvim`
 
