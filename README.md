@@ -1,3 +1,5 @@
+![Screen shot](./screenshot.png)
+
 # Quick Start
 ## Pre-requisites
 - [Neovim](https://neovim.io/)
