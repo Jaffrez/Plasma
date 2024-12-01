@@ -22,7 +22,10 @@ return {
             completion = {
                 documentation = {
                     auto_show = true,
-                }
+                },
+                trigger = {
+                    show_on_insert_on_trigger_character = false,
+                },
             }
         }
     },
@@ -39,7 +42,7 @@ return {
             local configs = require("plasma.lsp")
             local lsp = require("lspconfig")
 
-            for server,config in pairs(configs) do
+            for server, config in pairs(configs) do
                 lsp[server].setup(config)
             end
 
@@ -51,7 +54,7 @@ return {
         dependencies = {
             "williamboman/mason-lspconfig.nvim",
             "neovim/nvim-lspconfig",
-             "Saghen/blink.cmp"
+            "Saghen/blink.cmp"
         },
     },
     {
@@ -62,13 +65,13 @@ return {
     {
         "neovim/nvim-lspconfig",
         keys = {
-            { "<leader>rn", "<cmd>Lspsaga rename<CR>", desc = "Rename Variable" },
-            { "<leader>ca", "<cmd>Lspsaga code_action<CR>", desc = "Code Action" },
-            { "gd", "<cmd>Lspsaga goto_definition<CR>", desc = "Go to definition" },
-            { "gh", "<cmd>Lspsaga hover_doc<CR>", desc = "Show definition" },
-            { "gr", "<cmd>Lspsaga finder<CR>", desc = "Find reference" },
+            { "<leader>rn", "<cmd>Lspsaga rename<CR>",           desc = "Rename Variable" },
+            { "<leader>ca", "<cmd>Lspsaga code_action<CR>",      desc = "Code Action" },
+            { "gd",         "<cmd>Lspsaga goto_definition<CR>",  desc = "Go to definition" },
+            { "gh",         "<cmd>Lspsaga hover_doc<CR>",        desc = "Show definition" },
+            { "gr",         "<cmd>Lspsaga finder<CR>",           desc = "Find reference" },
 
-            { "ff", "<cmd>lua vim.lsp.buf.format()<CR>", desc = "Format Code" },
+            { "ff",         "<cmd>lua vim.lsp.buf.format()<CR>", desc = "Format Code" },
         }
     }
 }
