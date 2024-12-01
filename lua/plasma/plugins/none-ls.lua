@@ -6,6 +6,7 @@ return {
         local null = require("null-ls")
         null.setup({
             null.builtins.formatting.stylua,
+            null.builtins.formatting.rustfmt,
             null.builtins.completion.spell,
         })
     end,
