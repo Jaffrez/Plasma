@@ -62,10 +62,11 @@ return {
     {
         "neovim/nvim-lspconfig",
         keys = {
-            { "<leader>rn", "<cmd>lua vim.lsp.buf.rename()<CR>", desc = "Rename Variable" },
-            { "<leader>ca", "<cmd>lua vim.lsp.buf.code_action()<CR>", desc = "Code Action" },
-            { "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", desc = "Go to definition" },
-            { "gh", "<cmd>lua vim.lsp.buf.hover()<CR>", desc = "Show definition" },
+            { "<leader>rn", "<cmd>Lspsaga rename<CR>", desc = "Rename Variable" },
+            { "<leader>ca", "<cmd>Lspsaga code_action<CR>", desc = "Code Action" },
+            { "gd", "<cmd>Lspsaga goto_definition<CR>", desc = "Go to definition" },
+            { "gh", "<cmd>Lspsaga hover_doc<CR>", desc = "Show definition" },
+            { "gr", "<cmd>Lspsaga finder<CR>", desc = "Find reference" },
         }
     }
 }
