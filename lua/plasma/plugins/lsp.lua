@@ -67,6 +67,8 @@ return {
             { "gd", "<cmd>Lspsaga goto_definition<CR>", desc = "Go to definition" },
             { "gh", "<cmd>Lspsaga hover_doc<CR>", desc = "Show definition" },
             { "gr", "<cmd>Lspsaga finder<CR>", desc = "Find reference" },
+
+            { "ff", "<cmd>lua vim.lsp.buf.format()<CR>", desc = "Format Code" },
         }
     }
 }
