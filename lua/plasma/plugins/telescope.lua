@@ -3,11 +3,11 @@ return {
     event = "VeryLazy",
     keys = {
         { "<leader>ff", ":Telescope find_files<CR>", desc = "Find Files" },
-        { "<leader>fb", ":Telescope buffers<CR>", desc = "Find Buffers" },
-        { "<leader>fh", ":Telescope help_tags<CR>", desc = "Find Helps" },
-        { "<leader>fg", ":Telescope live_grep<CR>", desc = "Find String" },
-        { "<leader>fk", ":Telescope keymaps<CR>", desc = "Find Keymaps"},
-        { "<leader>fp", ":Telescope projects<CR>", desc = "Find Projects"},
+        { "<leader>fb", ":Telescope buffers<CR>",    desc = "Find Buffers" },
+        { "<leader>fh", ":Telescope help_tags<CR>",  desc = "Find Helps" },
+        { "<leader>fg", ":Telescope live_grep<CR>",  desc = "Find String" },
+        { "<leader>fk", ":Telescope keymaps<CR>",    desc = "Find Keymaps" },
+        { "<leader>fp", ":Telescope projects<CR>",   desc = "Find Projects" },
     },
     dependencies = {
         "nvim-lua/plenary.nvim",

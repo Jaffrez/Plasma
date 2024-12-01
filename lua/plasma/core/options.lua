@@ -40,6 +40,7 @@ local options = {
     list = true, -- show invisiable character
     listchars = { tab = '» ', trail = '·', nbsp = '␣' },
     wildmenu = true,
+    shadafile = vim.fn.stdpath("data") .. "/shada/shadafile",
 }
 
 for k,v in pairs(options) do

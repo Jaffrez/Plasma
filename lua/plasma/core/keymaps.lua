@@ -37,7 +37,6 @@ local trans_mode = {
     insert = 'i',
     visual = 'v',
     terminal = 't',
-    visual = 'v',
     visual_block = 'x',
     command = 'c',
 }
